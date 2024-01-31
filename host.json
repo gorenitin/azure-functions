@@ -3,5 +3,17 @@
   "extensionBundle": {
     "id": "Microsoft.Azure.Functions.ExtensionBundle",
     "version": "[3.*, 4.0.0)"
-  } 
+  },
+   "logging": {
+        "fileLoggingMode": "always",
+        "logLevel": {
+            "default": "Information"
+        }
+    },
+    "applicationInsights": {
+        "samplingSettings": {
+            "isEnabled": true,
+            "maxTelemetryItemsPerSecond" : 5
+        }
+    } 
 }
